@@ -14,7 +14,7 @@ Example Excel code for the Epoch Time conversion: `(((J2/60)/60)/24)+DATE(1970,1
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/89284280/130330965-f3d12aec-77ee-49e6-bae7-c8fd3fc16fee.png)
 
 ### Analysis of Outcomes Based on Goals
-The next analysis invovled looking at the count and percentage of successful, failed and canceled compaigns for plays based on their funding goals. The purpose here was to analyze the impacts of overall funding goal on the compaign. The strategy was to place each successful, failed or canceled play compaign in a funding goal bucket/bin, each separated by about $5,000. The, I used the `=COUNTIFS()` Excel function to count the number of plays by funding bin who were either successful, failed or canceled. Once those counts were determined, I then calculated a percentage of success, failure or cancelation. These values were then placed on a line graph with those compaigns with the lowest goals (< $1,000) on the left side of the X-axis to those campaigns with the highest (>= $50,000) goals on the right side of the X-axis.
+The next analysis invovled looking at the count and percentage of successful, failed and canceled compaigns for plays based on their funding goals. The purpose here was to analyze the impacts of overall funding goal on the compaign. The strategy was to place each successful, failed or canceled play compaign in a funding goal bucket/bin, each separated by about $5,000. Then, I used the `=COUNTIFS()` Excel function to count the number of plays by funding bin who were either successful, failed or canceled. Once those counts were determined, I then calculated a percentage of success, failure or cancelation. These values were then placed on a line graph with those compaigns with the lowest goals (< $1,000) on the left side of the X-axis to those campaigns with the highest (>= $50,000) goals on the right side of the X-axis.
 
 Exampel Excel code using COUNTIFS: `=COUNTIFS(Kickstarter!R:R,"plays",Kickstarter!F:F,"failed",Kickstarter!D:D,">=" &A3,Kickstarter!D:D,"<" &B3)`
 
@@ -40,8 +40,8 @@ Lastly, because I needed to determine counts of plays based on campaign outcome,
      - What city or even specific location (ex: theater) would be hosting it. Local support in the arts performances goes a long way.
      - Also, who is managing and putting on the performance can have an impact on it's success.
 4. What are some other possible tables and/or graphs that we could create?
-   - Success rate by country (table and a Column/Bar Chart). Would provide insight into success rate by country. Perhaps it's better to host a performance in the U.S. versus France.
-   - Number of days between Launch and Deadline. Does the number of days a campaign is open for have an impact on success? This can be shown in a line graph or bar chart.
+   - Success rate by country (table and a Column/Bar Chart). This chart would provide insight into success rate by country. Perhaps it's better to host a performance in the U.S. versus France.
+   - Number of days between Launch and Deadline. Does the number of days a campaign is open have an impact on success? This can be shown in a line graph or bar chart.
 
 
 
